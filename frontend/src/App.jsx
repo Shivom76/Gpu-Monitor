@@ -1,34 +1,10 @@
-// import {io} from "socket.io-client"
-// const url="http://localhost:9090"
-// const socket=io(`${url}`)
-
-// import GpuStream from "./components/GpuStream"
-
-// import {useState,useEffect} from "react"
-
-// import './App.css'
-
-// function App() {
-
-//   return(
-//     <>
-//       <h1 className="text-red-700">GPU Health</h1>
-//           <GpuStream />
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
-
 import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import GpuStream from "./components/GpuStream";
 import TemperatureChart from "./components/TemperatureChart";
 
-const socket = io("http://localhost:9090");
+// const socket = io("http://localhost:9090");
+const socket = io(https://gpu-monitor-backend.vercel.app/);
 
 // --- Helper Component Defined Here ---
 function AlertItem({ message, type }) {
