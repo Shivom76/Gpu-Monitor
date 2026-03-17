@@ -6,7 +6,7 @@ const {Server}=require("socket.io")
 const server= http.createServer(app)
 const io = new Server(server, {
     cors: {
-      origin: "*",
+      origin: ["http://localhost:5173","https://gpu-cluster-monitor.vercel.app/"],
       methods: ["GET", "POST"]
     }
   })

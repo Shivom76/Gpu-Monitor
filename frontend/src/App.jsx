@@ -4,7 +4,7 @@ import GpuStream from "./components/GpuStream";
 import TemperatureChart from "./components/TemperatureChart";
 
 // const socket = io("http://localhost:9090");
-const socket = io(https://gpu-monitor-backend.vercel.app/);
+const socket = io("https://gpu-monitor-backend.vercel.app/");
 
 // --- Helper Component Defined Here ---
 function AlertItem({ message, type }) {
