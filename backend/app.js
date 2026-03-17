@@ -32,3 +32,7 @@ gpuWorker.on("message",(data)=>{
 server.listen(9090,()=>{
     console.log(`9090 is listening`)
 })
+
+app.get("/",(req,res)=>{
+  res.send("<h1>This is root pagee</h1>")
+})
