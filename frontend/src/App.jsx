@@ -4,7 +4,7 @@ import GpuStream from "./components/GpuStream";
 import TemperatureChart from "./components/TemperatureChart";
 
 
-Using the backend server here and not the local server
+// Using the backend server here and not the local server
 // const socket = io("http://localhost:9090");
 const socket = io("https://gpu-monitor-backend.vercel.app");
 
